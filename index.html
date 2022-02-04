@@ -11,6 +11,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    />
     <style>
       section {
         padding: 60px 0;
@@ -23,7 +27,10 @@
       <!-- ! Logo in nav is called 'navbar-brand' -->
       <div class="container-xl">
         <a href="#intro" class="navbar-brand">
-          <span class="fw-bold text-secondary">Net Ninja Pro - the Book</span>
+          <span class="fw-bold text-secondary">
+            <i class="bi bi-book-half pe-1"></i>
+            Net Ninja Pro - the Book
+          </span>
         </a>
         <!--  toggle button for small screen -->
         <button
@@ -381,14 +388,24 @@
     <!-- reviews list START -->
     <section id="reviews" class="bg-light">
       <div class="container-lg">
-        <div class="text-center">
-          <h2>Book Reviews</h2>
+        <div class="text-center my-5">
+          <h2>
+            <i class="bi bi-stars"></i>
+            Book Reviews
+          </h2>
           <p class="lead">What my students have said about the book...</p>
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="list-group shadow-sm">
               <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
                 <h5 class="mb-1">A must buy for every aspiring web dev</h5>
                 <p class="mb-1">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
@@ -398,6 +415,13 @@
                 <small class="text-secondary">Review by Mario</small>
               </div>
               <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
                 <h5 class="mb-1">A must buy for every aspiring web dev</h5>
                 <p class="mb-1">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
@@ -407,6 +431,13 @@
                 <small class="text-secondary">Review by Mario</small>
               </div>
               <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
                 <h5 class="mb-1">A must buy for every aspiring web dev</h5>
                 <p class="mb-1">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
@@ -421,6 +452,116 @@
       </div>
     </section>
     <!-- reviews list END -->
+
+    <!-- contact form START -->
+    <!-- form-control, form-label, input-group, input-group-text -->
+    <section id="contact">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Get in Touch</h2>
+          <p class="lead">
+            Questions to ask? Fill out the form to cantact me directly...
+          </p>
+        </div>
+
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-6">
+            <!-- form  -->
+            <form>
+              <label class="muted mt-3" for="name" class="form-label"
+                >Name:
+              </label>
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-person-fill"></i>
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="e.g. Mario"
+                />
+              </div>
+
+              <label class="muted mt-3" for="email">Email: </label>
+              <div class="mb-4 input-group">
+                <span class="input-group-text"> @ </span>
+                <input
+                  class="form-control"
+                  id="email"
+                  placeholder="e.g. mario@example.com"
+                  type="email"
+                />
+              </div>
+
+              <label class="muted mt-4" for="subject"
+                >What is your question about?
+              </label>
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-chat-right-dots-fill"></i>
+                </span>
+                <select class="form-select" type="text" id="subject">
+                  <option value="pricing">Pricing</option>
+                  <option value="content">Content</option>
+                  <option value="other">Something else</option>
+                </select>
+              </div>
+
+              <div class="form-floating mb-4 mt-5">
+                <textarea
+                  id="query"
+                  class="form-control"
+                  style="height: 140px"
+                  placeholder="Your query"
+                ></textarea>
+                <label class="muted" for="query">Your query</label>
+              </div>
+
+              <div class="mb-4 text-center">
+                <button type="submit" class="btn btn-secondary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact form END -->
+
+    <!-- info for updates / modal trigger START -->
+    <section class="bg-light">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="display-4">Stay in The Loop</h2>
+          <p class="lead">Get the latest updates as they happen...</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <p class="text-muted my-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur architecto beatae minima incidunt quibusdam sit, quos
+              inventore consequatur velit non voluptas! Harum iste dolore
+              accusantium omnis officiis minima quam quaerat.
+            </p>
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="registerModal"
+          >
+            Register for Updates
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- info for updates / modal trigger END -->
+
+    <!-- Modal itself START -->
+    <!-- Modal itself END -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
