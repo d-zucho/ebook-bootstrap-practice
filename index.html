@@ -86,6 +86,14 @@
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </p>
             <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+            <a
+              href="#sidebar"
+              class="d-block mt-3"
+              role="button"
+              aria-controls="sidebar"
+              data-bs-toggle="offcanvas"
+              >Explore my other books</a
+            >
           </div>
           <div class="col-md-5 text-center d-none d-md-block">
             <img
@@ -550,7 +558,7 @@
             type="button"
             class="btn btn-primary"
             data-bs-toggle="modal"
-            data-bs-target="registerModal"
+            data-bs-target="#registerModal"
           >
             Register for Updates
           </button>
@@ -561,7 +569,107 @@
     <!-- info for updates / modal trigger END -->
 
     <!-- Modal itself START -->
+
+    <div
+      class="modal fade"
+      id="registerModal"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">Get the Latest Updates</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- modal body -->
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              pariatur illo quas consequuntur, vero velit cupiditate qui nostrum
+              ut sed in et ad ipsum nobis quidem tempora non ex minima
+              aspernatur! Minus ipsa explicabo sapiente!
+            </p>
+            <label for="modal-email" class="form-label"
+              >Your email address:
+            </label>
+            <input
+              type="email"
+              id="modal-email"
+              placeholder="e.g. mario@example.com"
+              class="form-control"
+            />
+          </div>
+
+          <!-- modal footer -->
+          <div class="modal-footer">
+            <button class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Modal itself END -->
+
+    <!-- offcanvas START -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="sidebar"
+      aria-labelledby="sidebar-label"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, delectus.
+          Voluptatibus maxime officia autem consectetur.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quas
+          quae eum asperiores ut porro?
+        </p>
+
+        <!-- dropdown -->
+        <div class="dropdown mt-3">
+          <button
+            type="button"
+            class="btn btn-secondary dropdown-toggle"
+            id="book-dropdown"
+            data-bs-toggle="dropdown"
+          >
+            Choose a book title
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+            <li>
+              <a href="#" class="dropdown-item">React from the Beginning</a>
+            </li>
+            <li>
+              <a href="#" class="dropdown-item">Advanced CSS</a>
+            </li>
+            <li>
+              <a href="#" class="dropdown-item">Training in JavaScript</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- offcanvas END -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
