@@ -473,7 +473,7 @@
         </div>
 
         <div class="row justify-content-center my-5">
-          <div class="col-lg-6">
+          <div class="col-md-6">
             <!-- form  -->
             <form>
               <label class="muted mt-3" for="name" class="form-label"
@@ -488,6 +488,7 @@
                   class="form-control"
                   id="name"
                   placeholder="e.g. Mario"
+                  required
                 />
               </div>
 
@@ -499,6 +500,7 @@
                   id="email"
                   placeholder="e.g. mario@example.com"
                   type="email"
+                  required
                 />
               </div>
 
@@ -554,14 +556,16 @@
               accusantium omnis officiis minima quam quaerat.
             </p>
           </div>
-          <button
-            type="button"
-            class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#registerModal"
-          >
-            Register for Updates
-          </button>
+          <div class="row col-md-8">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#registerModal"
+            >
+              Register for Updates
+            </button>
+          </div>
         </div>
       </div>
     </section>
